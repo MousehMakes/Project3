@@ -41,7 +41,7 @@ nav {
 }
 
 .menuContent {
-    background-color: rgba(60, 20, 134, 0.90);
+    background-color: rgba(60, 20, 134, 0.75);
     border-radius: 25px;
     padding: 10px;
 }
@@ -71,7 +71,7 @@ a {
 /*This Box should show up in the bottom of the screen */
 .infoBox {
     position: absolute;
-    background-color: rgba(60, 20, 134, 0.90);
+    background-color: rgba(60, 20, 134, 0.75);
     top: 75%;
     left: 5%;
     right: 5%;
