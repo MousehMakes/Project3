@@ -1,109 +1,233 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Sign Up</title>
   <script src="main.js"></script>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Spirax" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
   <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-  <h1>SignUp</h1>
-  
-  <form>
-      <label for="first">First Name:"</label>
-      <input name="first" id="first" type="text" placeholder="John" required>
-      <label for="last=">Last Name:"</label>
-      <input name="last" id="last" type="text" placeholder="Smith" required>
+  <div class="signupContainer">
+    <h1>SignUp</h1>
+    <div class="signupContent">
+      <div class="innerSignupContent">
 
-    <div>
-      <label for="male">Male</label>
-      <input type="radio" name="gender" id="male" value="male">
-      <label for="female">Female</label>
-      <input type="radio" name="gender" id="female" value"female">
-      <label for="other">Other</label>
-      <input type="radio" name="gender" id="other" value="other">
+        <form>
+          <label for="first">First Name: </label>
+          <input name="first" id="first" type="text" placeholder="" required>
+          <br>
+          <label for="last=">Last Name: </label>
+          <input name="last" id="last" type="text" placeholder="" required>
+          <br>
+
+          <div>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value "female">
+            <label for="other">Other</label>
+            <input type="radio" name="gender" id="other" value="other">
+          </div>
+          <br>
+
+          <div>
+            <label>
+              Email:
+              <input type="email" name="email" id="" placeholder="" required>
+            </label>
+            <br>
+
+            <label>
+              Password:
+              <input type="password" name="password" id="">
+            </label>
+            <br>
+          </div>
+
+          <div>
+            <label for="select-choice">Birthday:</label>
+            <select name="select-choice" id="select-choice">
+              <option value="">Month</option>
+              <option value="">January</option>
+              <option value="">February</option>
+              <option value="">March</option>
+              <option value="">April</option>
+              <option value="">May</option>
+              <option value="">June</option>
+              <option value="">July</option>
+              <option value="">August</option>
+              <option value="">September</option>
+              <option value="">October</option>
+              <option value="">November</option>
+              <option value="">December</option>
+            </select>
+
+            <select name="birthday-day" id="day">
+              <option value="0" selected disabled>Day</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+            <br>
+          </div>
+          <hr>
+
+          <div id="signupSurvey">
+            <h2>Rate how strongly you agree with the following statements:</h2>
+            <hr>
+            <h3>Question 1</h3>
+            <h4>I consider myself more of a dog person than a cat person.</h4>
+            <select class="form-control" id="question1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <hr>
+            <h3>Question 2</h3>
+            <h4>Politics stress me out.</h4>
+            <select class="form-control" id="question2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <hr>
+            <h3>Question 3</h3>
+            <h4>I have a large group of close friends.</h4>
+            <select class="form-control" id="question3">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <hr>
+            <h3>Question 4</h3>
+            <h4>I consider myself an introvert with a few close friends.</h4>
+            <select class="form-control" id="question4">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <hr>
+            <h3>Question 5</h3>
+            <h4>Poetry is my favorite genre of literature.</h4>
+            <select class="form-control" id="question5">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <hr>
+            <h3>Question 6</h3>
+            <h4>Actions speak louder than words.</h4>
+            <select class="form-control" id="question6">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <hr>
+            <h3>Question 7</h3>
+            <h4>Summer is my favorite season.</h4>
+            <select class="form-control" id="question7">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <hr>
+            <h3>Question 8</h3>
+            <h4>It relaxes me to listen to walk through the woods.</h4>
+            <select class="form-control" id="question8">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <hr>
+            <h3>Question 9</h3>
+            <h4>I am a night owl.</h4>
+            <select class="form-control" id="question9">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <hr>
+            <h3>Question 10</h3>
+            <h4>I find I can relax through activity (running, swimming, etc).</h4>
+            <select class="form-control" id="question10">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <hr>
+          </div>
+
+          <div>
+            <label for="agreed">I agree to the terms and conditions: </label>
+            <input type="checkbox" name="agreed" id="agreed">
+            <br>
+          </div>
+
+          <div>
+
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+
+
+      </div>
     </div>
-
-<div>
-  <label>
-    Email:
-    <input type="email" name="email" id="" placeholder="your email" required>
-  </label>
-
-  <label>
-    Password:
-    <input type="password" name="password" id="">
-  </label>
-</div>
-
-<div>
-  <label for="select-choice">Birthday:</label>
-  <select name="select-choice" id="select-choice">
-    <option value="">Month</option>
-    <option value="">January</option>
-    <option value="">February</option>
-    <option value="">March</option>
-    <option value="">April</option>
-    <option value="">May</option>
-    <option value="">June</option>
-    <option value="">July</option>
-    <option value="">August</option>
-    <option value="">September</option>
-    <option value="">October</option>
-    <option value="">November</option>
-    <option value="">December</option>
-  </select>
-<select name="birthday-day" id="day">
-  <option value="0"selected disabled>Day</option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-  <option value="6">6</option>
-  <option value="7">7</option>
-  <option value="8">8</option>
-  <option value="9">9</option>
-  <option value="10">10</option>
-  <option value="11">11</option>
-  <option value="12">12</option>
-  <option value="13">13</option>
-  <option value="14">14</option>
-  <option value="15">15</option>
-  <option value="16">16</option>
-  <option value="17">17</option>
-  <option value="18">18</option>
-  <option value="19">19</option>
-  <option value="20">20</option>
-  <option value="21">21</option>
-  <option value="22">22</option>
-  <option value="23">23</option>
-  <option value="24">24</option>
-  <option value="25">25</option>
-  <option value="26">26</option>
-  <option value="27">27</option>
-  <option value="28">28</option>
-  <option value="29">29</option>
-  <option value="30">30</option>
-  <option value="31">31</option>
-  </select>
-</div>
-
-<div>
-  <label for="agreed">I agree to the terms and conditions: </label>
-  <input type="checkbox" name="agreed" id="agreed">
-</div>
-
-<div>
-
-    <input type="submit" value="Submit"/>
-</div>
-</form>
-
+  </div>
 </body>
+
 </html>

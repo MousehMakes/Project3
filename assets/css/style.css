@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
+    font-family: 'Amatic SC', cursive;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -36,7 +37,6 @@ nav {
     align-content: right;
     text-align: right;
     float: right;
-    font-family: 'Spirax', cursive;
     font-size: 25px;
 }
 
@@ -52,7 +52,6 @@ a {
 
 /*This Box should show up in the middle of the screen */
 .logo {
-    font-family: 'Spirax', cursive;
     font-size: 180px;
     position: absolute;
     margin: auto;
@@ -84,10 +83,43 @@ a {
     overflow: scroll;
 }
 
-.interiorInfo {
-    position: relative;
-    top: 50%;
+.signupContainer {
+    background-color: rgba(60, 20, 134, 0.75);
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    right: 25%;
+    bottom: 5%;
+    margin: auto;
+    border-radius: 25px;
+    font-size: 20px;
+    display: block;
+}
+
+.signupContent {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    top: 25%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    padding: 15px;
+    transform: translateX(-50%) translateY(-25%);
+    
+    
+}
+
+.innerSignupContent {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    margin: auto;
+    top: 50%;
+    transform:  translateY(-25%);
+    overflow: scroll;
+    border: 1px solid #D9A0FE;
+    border-radius: 25px;
 }
