@@ -4,6 +4,10 @@ html{
     margin: 0;
 }
 
+h1 {
+    font-size: 30px;
+}
+
 body {
     background: url('../images/backdrop.png') no-repeat center center fixed;
     margin: 0;
@@ -117,7 +121,6 @@ a {
     right: 0%;
     bottom: 0%;
     margin: auto;
-    vertical-align: middle;
     overflow: scroll;
     border: 1px solid #D9A0FE;
     border-radius: 25px;
