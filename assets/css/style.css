@@ -141,6 +141,7 @@ a {
 h1, .boardContainer2 {
     background-color: rgba(60, 20, 134, 0.65);
     padding: 15px;
+    border-radius: 25px;
 }
 
 .quoteBox {
