@@ -138,6 +138,11 @@ a {
     border-radius: 50%;
 }
 
+h1, .boardContainer2 {
+    background-color: rgba(60, 20, 134, 0.75);
+    padding: 15px;
+}
+
 .quoteBox {
     position: absolute;
     background-color: rgba(60, 20, 134, 0.75);
