@@ -220,6 +220,7 @@ span.banner {
     margin: 5%;
     margin-bottom: 10%;
     background-color: rgba(164, 121, 245, 0.5);
+    font-size: 35px;
  }
  #affirmations {
     border-radius: 25px;
@@ -227,4 +228,5 @@ span.banner {
     height: 45%;
     margin: 5%;
     background-color: rgba(164, 121, 245, 0.5);
+    font-size: 35px;
  }
