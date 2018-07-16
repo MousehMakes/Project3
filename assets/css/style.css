@@ -45,7 +45,7 @@ nav {
 }
 
 .visionHeader {
-    background-color: rgba(60, 20, 134, 0.75);
+    background-color: rgba(60, 20, 134, 0.65);
     border-radius: 25px;
     padding: 10px;
     font-size: 25px;
@@ -57,14 +57,14 @@ nav {
     width: 24%;
     float: right;
     margin-right: 5%;
-    background-color: rgba(60, 20, 134, 0.75);
+    background-color: rgba(60, 20, 134, 0.65);
     border-radius: 25px;
     padding: 10px;
     height: 90%;
 }
 
 .boardContainer {
-    background-color: rgba(60, 20, 134, 0.75);
+    background-color: rgba(60, 20, 134, 0.65);
     border-radius: 25px;
     margin-top: 2%;
     height: 240px;
@@ -79,7 +79,7 @@ nav {
 }
 
 .menuContent {
-    background-color: rgba(60, 20, 134, 0.75);
+    background-color: rgba(60, 20, 134, 0.65);
     border-radius: 25px;
     padding: 10px;
 }
@@ -108,7 +108,7 @@ a {
 /*This Box should show up in the bottom of the screen */
 .infoBox {
     position: absolute;
-    background-color: rgba(60, 20, 134, 0.75);
+    background-color: rgba(60, 20, 134, 0.65);
     top: 75%;
     left: 5%;
     right: 5%;
@@ -139,13 +139,13 @@ a {
 }
 
 h1, .boardContainer2 {
-    background-color: rgba(60, 20, 134, 0.75);
+    background-color: rgba(60, 20, 134, 0.65);
     padding: 15px;
 }
 
 .quoteBox {
     position: absolute;
-    background-color: rgba(60, 20, 134, 0.75);
+    background-color: rgba(60, 20, 134, 0.65);
     top: 85%;
     left: 10%;
     right: 5%;
@@ -159,7 +159,7 @@ h1, .boardContainer2 {
 }
 
 .signupContainer {
-    background-color: rgba(60, 20, 134, 0.75);
+    background-color: rgba(60, 20, 134, 0.65);
     position: absolute;
     top: 5%;
     left: 25%;
