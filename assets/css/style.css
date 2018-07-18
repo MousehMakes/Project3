@@ -13,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Merienda', cursive;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -99,7 +99,7 @@ a {
     display: block;
     word-wrap: break-word;
     color: #D9A0FE;
-    -webkit-text-stroke: 1px #7C12C1;
+    -webkit-text-stroke: 2px #7C12C1;
     top: 32%;
     left: 50%;
     transform: translateX(-50%) translateY(-32%);
@@ -114,7 +114,7 @@ a {
     right: 5%;
     bottom: 5%;
     border-radius: 25px;
-    font-size: 20px;
+    font-size: 30px;
     display: block;
     padding: 15px;
     word-wrap: break-word;
@@ -152,7 +152,7 @@ h2, .boardContainer2, .bgInvolved {
     right: 5%;
     bottom: 5%;
     border-radius: 25px;
-    font-size: 20px;
+    font-size: 30px;
     display: block;
     padding: 15px;
     word-wrap: break-word;
