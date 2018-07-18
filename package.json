@@ -2,23 +2,32 @@
   "name": "project3",
   "version": "1.0.0",
   "description": "Project 3 for the group of Shelby Blood and Kristal Walker. This project is called DreamCatcher, and is an interactive vision board.",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "ejs": "^1.0.0",
-    "express": "^4.9.8",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
     "html": "^1.0.0",
-    "npm": "^6.1.0"
+    "method-override": "^3.0.0",
+    "mongoose": "^5.2.4",
+    "npm": "^6.1.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1",
+    "require": "^2.4.20"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MousehMakes/Project3.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/MousehMakes/Project3/issues"
   },

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DreamCatcher</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../client/css/style.css">
+
+</head>
+
+<body>
+
+
+    <% include partials/header %>
+
+
+        <div class="container">
+            <header class="jumbotron">
+                <div class="container">
+                    <h1>My Vision Board</h1>
+
+                    <p>Remember a Vision Board is a tool used to help you maintain focus on specific life goals. It is recommended
+                        to spend five minutes or more each day reviewing and reinforcing what you desire in life.
+                    </p>
+
+                    <p>
+                        <a class="btn btn-info btn-lg" href="/dreams/new"> Add a New Dream</a>
+                    </p>
+                </div>
+            </header>
+
+            <p>
+                <h4 class="quoteClass">Vision without action is merely a dream. Action without vision just passes the time. Vision with action can
+                    change the world. - Joel A. Barker </h4>
+            </p>
+
+            <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+
+                <% dreams.forEach(function(dream){ %>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="thumbnail">
+                            <img src="<%= dream.image %>">
+                            <div class="caption">
+                                <h4>
+                                    <%= dream.dream %>
+                                </h4>
+                            </div>
+                            <p>
+                                <a href="/dreams/<%= dream._id %>" class="btn btn-primary">More Info</a>
+                            </p>
+                        </div>
+                    </div>
+                    <% }); %>
+            </div>
+        </div>
+        <% include partials/footer %>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+                crossorigin="anonymous"></script>
+
+</body>
+
+</html>
