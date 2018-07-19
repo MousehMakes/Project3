@@ -4,8 +4,10 @@ html{
     margin: 0;
 }
 
-h1 {
+h1, h4 {
     font-size: 30px;
+    background-color: rgba(60, 20, 134, 0.65);
+    border-radius:25px;
 }
 
 body {
