@@ -6,12 +6,12 @@ var express   = require("express"),
     passport  = require("passport"),
     LocalStrategy = require("passport-local"),
     Dream    = require("./models/dream"),
-    User     = require("./models/user")
+    User     = require("./models/user");
 
-mongoose.connect('mongodb://localhost:27017/vision_board', { useNewUrlParser: true });
+//mongoose.connect('mongodb://localhost:27017/vision_board', { useNewUrlParser: true });
+mongoose.connect("mongodb://kriswalk:honey1@ds141641.mlab.com:41641/dreamcatcher");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
-
 
 app.use(require("express-session")({
   secret: "Once again you did it!",
@@ -69,7 +69,7 @@ app.get("/dreams", function(req, res){
     var dream = req.body.dream; 
     var image = req.body.image;
     var actionplan = req.body.actionplan;
-    var newDream = {dream: dream, image: image, actionplan: actionplan}
+    var newDream = {dream: dream, image: image, actionplan: actionplan};
     Dream.create(newDream, function(err, newlyCreated){
       if(err){
           console.log(err);
