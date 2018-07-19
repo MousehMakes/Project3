@@ -1,0 +1,44 @@
+<% include partials/header %>
+
+
+<div class="container">
+    <header class="jumbotron">
+        <div class="container">
+            <h1>My Vision Board</h1>
+   
+            <p>Remember a Vision Board is a tool used to help you maintain focus on specific life goals.
+            It is recommended to spend five minutes or more each day reviewing and reinforcing what you desire in life. 
+            </p>
+    
+            <p>
+                <a class= "btn btn-info btn-lg" href="/dreams/new"> Add a New Dream</a>
+            </p>
+        </div>
+    </header>
+    
+     <p>
+        <h4>Vision without action is merely a dream. 
+        Action without vision just passes the time. 
+        Vision with action can change the world.
+        - Joel A. Barker </h4>
+        </p>
+
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+    
+        <% dreams.forEach(function(dream){ %>
+          <div class="col-md-3 col-sm-6">
+              <div class="thumbnail">
+                <img src="<%= dream.image %>">
+                <div class="caption">
+                    <h4><%= dream.dream %></h4>
+                </div>
+                <p>
+                    <a href="/dreams/<%= dream._id %>" class="btn btn-primary">More Info</a>
+                </p>
+              </div>
+           </div>
+        <% }); %>
+        </div>
+    </div>
+<% include partials/footer %>
+

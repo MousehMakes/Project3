@@ -1,0 +1,41 @@
+<% include partials/header %>
+
+<div class="container">
+    <div class="row">
+       <h1>Create a New Dream or Goal</h1>
+
+    
+    <h4>Instructions:</h4>
+        <ul>
+            <li>Identify your vision and give it clarity.</li>
+            <li>Then fill out the form below with the needed information to achieve your dream/goal.</li>
+            <li>Once you find a photo that represents your vision, right click the photo and select copy image address.Then paste in the image url section.</li>
+            <li>Great now your image will be added to your Board.</li>
+         </ul>
+
+    <h2 style="text-align: center;"> Dream It Live It!!!</h2>
+    
+    <div style="width: 30%; margin: 25px auto;">
+    <form action="/dreams" method="POST">
+         <div class="form-group">
+          <input class="form-control" type="text" name="dream" placeholder="dream">
+         </div>
+         
+         <div class="form-group">
+          <input class="form-control" type="text" name="image" placeholder="image url">
+         </div>
+        
+          <div class="form-group">
+          <input class="form-control" type="text" name="actionplan" placeholder="actionplan">
+         </div>
+
+         <div class="form-group">
+          <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+         </div>
+    </form>
+    <a href="/dreams"class="btn btn-lg btn-primary btn-block">Go Back</a> 
+    </div> 
+    </div>
+</div>
+
+<% include partials/footer %>
